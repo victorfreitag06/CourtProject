@@ -1,0 +1,92 @@
+:root {
+    --cor-fundo: #F9F9FE;
+    --cor-primaria: #000C52;
+    --cor-secundaria: #053894;
+    --cor-branca: #f0f0f0;
+    --cor-preta: #010101;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Arial', sans-serif;
+    
+    scrollbar-width: none;
+}
+
+body {
+    background: linear-gradient(#fff, #fff, #0101fc38, white, #0101fc38);
+}
+
+nav  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+    height: 20px;
+    width: 100%;
+
+}
+
+nav .menu-pc li {
+    text-decoration: none;
+    font-size: 15px;
+}
+
+nav img {
+    width: 120px;
+    margin: 15px;
+    object-fit: cover;
+}
+
+.menu-pc {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    padding: 20px;
+}
+.menu-pc li a {
+    color: var(--cor-primaria);
+}
+.menu-pc li a:hover{
+    color: var(--cor-secundaria);
+
+}
+.fazerlogin{
+    margin-right: 10px;
+}
+.fazerlogin button{
+    background-color: var(--cor-primaria);
+    color: var(--cor-branca);
+    padding: 5px 50px;
+    border-radius: 50px;
+    font-size: 13px;
+    border: none;
+    cursor: pointer;
+}
+.fazerlogin button:hover{
+    background: linear-gradient(90deg, #1d0686, #052174);
+}
+
+.menu-toggle-btn {
+    display: none;
+}
+@media(max-width:500px){
+    .menu-pc,.fazerlogin{
+        display: none;
+    }
+    .menu-toggle-btn{
+        display: flex;
+    }
+    .floating-menu{
+        display: flex;
+    }
+    nav img{
+        width: 80px;
+    }
+    nav{
+        padding: 20px 0;
+    }
+}

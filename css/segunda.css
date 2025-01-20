@@ -1,0 +1,89 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    color:black;
+    font-size: 40px;
+}
+.btn{
+    background: linear-gradient(90deg, #050043, #09007B);
+}
+.primeira img{
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+
+h2 {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.selection-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+.selection-container h2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.option {
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    background: lightgray;
+    color: #555;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.option.active {
+    background-color: #00137F;
+    color: white;
+    border: none;
+}
+
+.option:hover {
+    background-color: #f0f0f0;
+}
+
+.option.active:hover{
+    background-color: #000c52;
+}
+
+.selection-menu::before,
+.selection-menu::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background-color: #ddd;
+}
+
+@media(max-width:500px){
+    .primeira img{
+        height: 200px;
+    }
+    .selection-container h1{
+        font-size: 25px;
+    }
+    .selection-container h2{
+        font-size: 15px;
+    }
+    .selection-menu{
+        gap: 5px;
+    }
+    .option{
+        padding: 8px 11px;
+        margin: 5px;
+    }
+}
