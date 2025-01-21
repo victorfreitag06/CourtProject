@@ -1,18 +1,19 @@
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-h1{
-    color:black;
+h1 {
+    color: black;
     font-size: 40px;
 }
-.btn{
+
+.btn {
     background: linear-gradient(90deg, #050043, #09007B);
 }
-.primeira img{
+
+.primeira img {
     width: 100%;
     height: 450px;
     object-fit: cover;
@@ -31,6 +32,7 @@ h2 {
     gap: 30px;
     margin-top: 30px;
 }
+
 .selection-container h2 {
     display: flex;
     justify-content: center;
@@ -57,7 +59,7 @@ h2 {
     background-color: #f0f0f0;
 }
 
-.option.active:hover{
+.option.active:hover {
     background-color: #000c52;
 }
 
@@ -69,20 +71,24 @@ h2 {
     background-color: #ddd;
 }
 
-@media(max-width:500px){
-    .primeira img{
+@media(max-width:500px) {
+    .primeira img {
         height: 200px;
     }
-    .selection-container h1{
+
+    .selection-container h1 {
         font-size: 25px;
     }
-    .selection-container h2{
+
+    .selection-container h2 {
         font-size: 15px;
     }
-    .selection-menu{
+
+    .selection-menu {
         gap: 5px;
     }
-    .option{
+
+    .option {
         padding: 8px 11px;
         margin: 5px;
     }

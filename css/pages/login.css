@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(145deg, #1e3c72, #48006c);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    background-color: #fff;
+    border-radius: 15px;
+    display: flex;
+    max-width: 500px;
+    width: 100%;
+    height: 60%;
+    justify-content: center;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+
+.logo-section .shapes {
+    position: absolute;
+}
+
+
+.login-form {
+    width: 80%;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.login-form h2 {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    color: #000;
+    font-size: 24px;
+}
+
+.login-form input {
+    padding: 15px;
+    margin-bottom: 15px;
+    border: none;
+    background-color: #f0f0f0;
+    border-radius: 30px;
+    font-size: 16px;
+}
+
+.login-form input:focus {
+    outline: none;
+}
+
+.login-form button {
+    padding: 15px;
+    background: linear-gradient(90deg, #050043, #09007B);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.login-form button:hover {
+    background-color: #162060;
+}
+
+.forgot-password,.cadastro {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.forcad{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.forgot-password a {
+    color: #333;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+#successModal, #errorModal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+    /* Flexbox para centralizar o conteúdo */
+}
+
+#successModal .modal-content, #errorModal .modal-content {
+    background-color: #f0f8ff; /* Tom de azul claro */
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    width: 350px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#successModal h2 {
+    color: #007bff; /* Azul principal */
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#successModal p {
+    color: #333;
+    font-size: 18px;
+}
+
+/* Estilo do modal de erro */
+#errorModal .modal-content {
+    background-color: #fff4f4; /* Tom de vermelho claro */
+    border: 2px solid #f44336; /* Vermelho para erro */
+}
+
+#errorModal h2 {
+    color: #f44336; /* Vermelho para erro */
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#errorModal p {
+    color: #333;
+    font-size: 18px;
+}
+@media(max-width:500px){
+
+    .forcad{
+        flex-direction: column;
+    }
+    .cadastro, .forgot-password{
+        justify-content: center;
+        margin: 10px 0;
+    }
+    .login-form{
+        width: 90%;
+    }
+}

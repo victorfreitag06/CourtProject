@@ -3,20 +3,17 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/segunda.css">
-    <link rel="stylesheet" href="css/projects.css">
-    <link rel="stylesheet" href="css/rodape.css">
-    <link rel="stylesheet" href="css/duvidas.css">
-    <link rel="stylesheet" href="css/flutuante.css">
-    <link rel="stylesheet" href="css/modal.css ">
+    <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <title>Início</title>
 </head>
 <style>
-     
+
 </style>
+
 <body>
     <nav>
         <div class="logo">
@@ -27,11 +24,10 @@
             <li><a href="src/agendamento.html">Agendamentos</a></li>
             <li><a href="src/agendamento.html">Historico</a></li>
         </ul>
-        <div class="fazerlogin">
-            <button>Login</button>
-        </div>
+        <a class="login" href="src/login.html">Fazer Login<i class="bi bi-person-fill"></i></a>
         <button id="menu-toggle" class="menu-toggle-btn">☰</button>
         <div id="floating-menu" class="floating-menu">
+            <button id="close-menu" class="close-menu-btn">✖</button>
             <ul>
                 <li>
                     <a href="#">
@@ -130,255 +126,267 @@
     <div id="espaços" class="selection-container">
         <h2>Uma seleção de quadras perto de você</h2>
         <h1 style="text-align: center;">Seleção de Quadras</h1>
-    
+
         <!-- Seção Ambientes -->
         <div class="selection-menu">
             <button class="option active" onclick="showCards('ambientes', this)">Ambientes</button>
             <button class="option" onclick="showCards('aulas', this)">Aulas</button>
             <button class="option" onclick="showCards('equipamentos', this)">Equipamentos</button>
         </div>
-    
-    
-
-    <div id="ambientes" class="cards show">
-        <div class="card">
-            <img src="images/beach/beach.jpg" alt="Imagem do Card" class="card-image">
-            <div class="card-body">
-                <span class="badge">BEACH TENNIS | VÔLEI DE AREIA</span>
-                <h5 class="card-title">QUADRA DE AREIA</h5>
-                <p class="description">Quadra de areia com rede e suporte para Beach Tennis e Vôlei de Areia</p>
-                <br>
-                <div class="btn-group">
-                    <div class="btn-card"><a href="quadra.html">Agende Aqui</a></div>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <img src="images/campo/campo.jpg" alt="Imagem do Card" class="card-image">
-            <div class="card-body">
-                <span class="badge">FUTEBOL | RUGBY</span>
-                <h5 class="card-title">Campo de grama</h5>
-                <p class="description">Campo de futebol de tamanho profissional para jogar futebol ou rugby</p>
-                <br>
-                <div class="btn-group">
-                    <div class="btn-card"><a href="quadra2.html">Agende Aqui</a></div>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <img src="images/ginasio/ginasio.jpg" alt="Imagem do Card" class="card-image">
-            <div class="card-body">
-                <span class="badge">FUTSAL | VÔLEI | BASQUETE</span>
-                <h5 class="card-title">Ginásio</h5>
-                <p class="description">Ginásio esportivo e com arquibacanda para jogar diversos esportes</p>
-                <br>
-                <div class="btn-group">
-                    <div class="btn-card"><a href="quadra3.html">Agende Aqui</a></div>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <img src="images/society/society.jpg" alt="Imagem do Card" class="card-image">
-            <div class="card-body">
-                <span class="badge">FUTEBOL</span>
-                <h5 class="card-title">Society</h5>
-                <p class="description">Quadra com grama sintética e tamanho grande para jogar futebol</p>
-                <br>
-                <div class="btn-group">
-                    <div class="btn-card"><a href="quadra4.html">Agende Aqui</a></div>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <img src="images/quadra_fechada/quadrafechada.jpg" alt="Imagem do Card" class="card-image">
-            <div class="card-body">
-                <span class="badge">FUTSAL | VÔLEI | BASQUETE</span>
-                <h5 class="card-title">Quadra fechada</h5>
-                <p class="description">Quadra fechada ao livre para jogar esportes como futsal, basquete e vôlei</p>
-                <br>
-                <div class="btn-group">
-                    <div class="btn-card"><a href="quadra5.html">Agende Aqui</a></div>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <img src="images/quadra_aberta/quadraaberta.jpg" alt="Imagem do Card" class="card-image">
-            <div class="card-body">
-                <span class="badge">FUTSAL | VÔLEI | BASQUETE</span>
-                <h5 class="card-title">Quadra aberta</h5>
-                <p class="description">Quadra aberta ao ar livre para jogar esportes como futsal, basquete e vôlei</p>
-                <br>
-                <div class="btn-group">
-                    <div class="btn-card"><a href="quadra6.html">Agende Aqui</a></div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="aulas" class="cards">
-        <div class="card">
-            <img src="images/beach/beach3.jpg" alt="Imagem do Card" class="card-image">
-            <div class="card-body">
-                <span class="badge">BEACH TENNIS</span>
-                <h5 class="card-title">AULA DE BEACH TENNIS</h5>
-                <p class="description">8:30 às 10:00 <br> 14:00 às 15:30</p>
-                <br>
-                <div class="btn-group">
-                    <div class="btn-card"><a href="quadra.html">Inscreva-se</a></div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="card">
-            <img src="images/campo/campo3.jpg" alt="Imagem do Card" class="card-image">
-            <div class="card-body">
-                <span class="badge">FUTEBOL</span>
-                <h5 class="card-title">AULA DE FUTEBOL</h5>
-                <p class="description">9:00 às 11:00 <br> 16:00 às 18:00</p>
-                <br>
-                <div class="btn-group">
-                    <div class="btn-card"><a href="src/quadra3.html">Inscreva-se</a></div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="card">
-            <img src="images/ginasio/ginasio2.jpg" alt="Imagem do Card" class="card-image">
-            <div class="card-body">
-                <span class="badge">BASQUETE</span>
-                <h5 class="card-title">AULA DE BASQUETE</h5>
-                <p class="description">10:00 às 12:00 <br> 15:00 às 17:00</p>
-                <br>
-                <div class="btn-group">
-                    <div class="btn-card"><a href="ginasio.html">Inscreva-se</a></div>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <img src="images/ginasio/ginasio3.jpeg" alt="Imagem do Card" class="card-image">
-            <div class="card-body">
-                <span class="badge">FUTSAL</span>
-                <h5 class="card-title">AULA DE FUTSAL</h5>
-                <p class="description">12:00 às 14:00 <br> 17:00 às 19:00</p>
-                <br>
-                <div class="btn-group">
-                    <div class="btn-card"><a href="ginasio.html">Inscreva-se</a></div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="card">
-            <img src="images/campo/campo2.jpg" alt="Imagem do Card" class="card-image">
-            <div class="card-body">
-                <span class="badge">RUGBY</span>
-                <h5 class="card-title">AULA DE RUGBY</h5>
-                <p class="description">7:30 às 9:00 <br> 18:00 às 19:30</p>
-                <br>
-                <div class="btn-group">
-                    <div class="btn-card"><a href="campo-rugby.html">Inscreva-se</a></div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="card">
-            <img src="images/equipamento/equipamento_volei.webp" alt="Imagem do Card" class="card-image">
-            <div class="card-body">
-                <span class="badge">VÔLEI</span>
-                <h5 class="card-title">Aula de Vôlei</h5>
-                <p class="description">11:00 às 13:00 <br> 19:00 às 21:00</p>
-                <br>
-                <div class="btn-group">
-                    <div class="btn-card"><a href="quadra-volei.html">Inscreva-se</a></div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="equipamentos" class="cards">
-        <div class="card">
-            <img src="images/equipamento/equipamento_beach.jpg" alt="Imagem do Card" class="card-image">
-            <div class="card-body">
-                <h5 class="card-title">Raquete de Beach Tennis</h5>
-                <p class="description">Equipamento disponível para o jogo de Beach Tennis. Precisa de uma quadra para ser utilizado.</p>
-                <br>
-                <p><strong>Nota:</strong> Para utilizar este equipamento, você precisa agendar uma quadra específica para o Beach Tennis.</p>
-            </div>
-        </div>
-        
-        <div class="card">
-            <img src="images/equipamento/equipamento_futebol.jpeg" alt="Imagem do Card" class="card-image">
-            <div class="card-body">
-    
-                <h5 class="card-title">Bola Futebol</h5>
-                <p class="description">Bola de futebol disponível para jogos de futebol no campo ou Society. Necessita de um campo para ser utilizado.</p>
-                <br>
-                <p><strong>Nota:</strong> Para utilizar este equipamento, você precisa agendar um campo de futebol ou rugby.</p>
-            </div>
-        </div>
-        
-        <div class="card">
-            <img src="images/equipamento/equipamento_basquete.webp" alt="Imagem do Card" class="card-image">
-            <div class="card-body">
-    
-                <h5 class="card-title">Bola Basquete</h5>
-                <p class="description">Bola de basquete disponível para o jogo. Precisa de um ginásio ou quadra para ser utilizada.</p>
-                <br>
-                <p><strong>Nota:</strong> Para utilizar este equipamento, você precisa agendar um ginásio ou quadra de basquete.</p>
-            </div>
-        </div>
-        
-        <div class="card">
-            <img src="images/equipamento/equipamento_volei.webp" alt="Imagem do Card" class="card-image">
-            <div class="card-body">
-
-                <h5 class="card-title">Bola Vôlei</h5>
-                <p class="description">bolas de vôlei está disponível para jogar. Necessita de uma quadra de vôlei.</p>
-                <br>
-                <p><strong>Nota:</strong> Para utilizar este equipamento, você precisa agendar uma quadra de vôlei.</p>
-            </div>
-        </div>
-        
-        <div class="card">
-            <img src="images/equipamento/equipamento_rugby.png" alt="Imagem do Card" class="card-image">
-            <div class="card-body">
-                <h5 class="card-title">Bola Rugby</h5>
-                <p class="description">Bola de rugby disponível para jogos de rugby. Necessita de um campo de rugby.</p>
-                <br>
-                <p><strong>Nota:</strong> Para utilizar este equipamento, você precisa agendar um campo de rugby.</p>
-            </div>
-        </div>
-    </div>
 
 
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-section">
-                <h4>Sobre Nós</h4>
-                <p>Oferecemos os melhores espaços esportivos para você treinar e se divertir. Agende sua quadra e aproveite!</p>
+
+        <div id="ambientes" class="cards show">
+            <div class="card">
+                <img src="images/beach/beach.jpg" alt="Imagem do Card" class="card-image">
+                <div class="card-body">
+                    <span class="badge">BEACH TENNIS | VÔLEI DE AREIA</span>
+                    <h5 class="card-title">QUADRA DE AREIA</h5>
+                    <p class="description">Quadra de areia com rede e suporte para Beach Tennis e Vôlei de Areia</p>
+                    <br>
+                    <div class="btn-group">
+                        <div class="btn-card"><a href="quadra.html">Agende Aqui</a></div>
+                    </div>
+                </div>
             </div>
-    
-            <div class="footer-section">
-                <h4>Contato</h4>
-                <p><i class="fas fa-phone"></i> (11) 99999-9999</p>
-                <p><i class="fas fa-envelope"></i> contato@seusite.com</p>
-                <p><i class="fas fa-map-marker-alt"></i> São Paulo, SP - Brasil</p>
+            <div class="card">
+                <img src="images/campo/campo.jpg" alt="Imagem do Card" class="card-image">
+                <div class="card-body">
+                    <span class="badge">FUTEBOL | RUGBY</span>
+                    <h5 class="card-title">Campo de grama</h5>
+                    <p class="description">Campo de futebol de tamanho profissional para jogar futebol ou rugby</p>
+                    <br>
+                    <div class="btn-group">
+                        <div class="btn-card"><a href="quadra2.html">Agende Aqui</a></div>
+                    </div>
+                </div>
             </div>
-    
-            <div class="footer-section">
-                <h4>Redes Sociais</h4>
-                <div class="social-icons">
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+            <div class="card">
+                <img src="images/ginasio/ginasio.jpg" alt="Imagem do Card" class="card-image">
+                <div class="card-body">
+                    <span class="badge">FUTSAL | VÔLEI | BASQUETE</span>
+                    <h5 class="card-title">Ginásio</h5>
+                    <p class="description">Ginásio esportivo e com arquibacanda para jogar diversos esportes</p>
+                    <br>
+                    <div class="btn-group">
+                        <div class="btn-card"><a href="quadra3.html">Agende Aqui</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/society/society.jpg" alt="Imagem do Card" class="card-image">
+                <div class="card-body">
+                    <span class="badge">FUTEBOL</span>
+                    <h5 class="card-title">Society</h5>
+                    <p class="description">Quadra com grama sintética e tamanho grande para jogar futebol</p>
+                    <br>
+                    <div class="btn-group">
+                        <div class="btn-card"><a href="quadra4.html">Agende Aqui</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/quadra_fechada/quadrafechada.jpg" alt="Imagem do Card" class="card-image">
+                <div class="card-body">
+                    <span class="badge">FUTSAL | VÔLEI | BASQUETE</span>
+                    <h5 class="card-title">Quadra fechada</h5>
+                    <p class="description">Quadra fechada ao livre para jogar esportes como futsal, basquete e vôlei</p>
+                    <br>
+                    <div class="btn-group">
+                        <div class="btn-card"><a href="quadra5.html">Agende Aqui</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/quadra_aberta/quadraaberta.jpg" alt="Imagem do Card" class="card-image">
+                <div class="card-body">
+                    <span class="badge">FUTSAL | VÔLEI | BASQUETE</span>
+                    <h5 class="card-title">Quadra aberta</h5>
+                    <p class="description">Quadra aberta ao ar livre para jogar esportes como futsal, basquete e vôlei
+                    </p>
+                    <br>
+                    <div class="btn-group">
+                        <div class="btn-card"><a href="quadra6.html">Agende Aqui</a></div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 Seu Site | Todos os direitos reservados.</p>
+        <div id="aulas" class="cards">
+            <div class="card">
+                <img src="images/beach/beach3.jpg" alt="Imagem do Card" class="card-image">
+                <div class="card-body">
+                    <span class="badge">BEACH TENNIS</span>
+                    <h5 class="card-title">AULA DE BEACH TENNIS</h5>
+                    <p class="description">8:30 às 10:00 <br> 14:00 às 15:30</p>
+                    <br>
+                    <div class="btn-group">
+                        <div class="btn-card"><a href="quadra.html">Inscreva-se</a></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/campo/campo3.jpg" alt="Imagem do Card" class="card-image">
+                <div class="card-body">
+                    <span class="badge">FUTEBOL</span>
+                    <h5 class="card-title">AULA DE FUTEBOL</h5>
+                    <p class="description">9:00 às 11:00 <br> 16:00 às 18:00</p>
+                    <br>
+                    <div class="btn-group">
+                        <div class="btn-card"><a href="src/quadra3.html">Inscreva-se</a></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/ginasio/ginasio2.jpg" alt="Imagem do Card" class="card-image">
+                <div class="card-body">
+                    <span class="badge">BASQUETE</span>
+                    <h5 class="card-title">AULA DE BASQUETE</h5>
+                    <p class="description">10:00 às 12:00 <br> 15:00 às 17:00</p>
+                    <br>
+                    <div class="btn-group">
+                        <div class="btn-card"><a href="ginasio.html">Inscreva-se</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/ginasio/ginasio3.jpeg" alt="Imagem do Card" class="card-image">
+                <div class="card-body">
+                    <span class="badge">FUTSAL</span>
+                    <h5 class="card-title">AULA DE FUTSAL</h5>
+                    <p class="description">12:00 às 14:00 <br> 17:00 às 19:00</p>
+                    <br>
+                    <div class="btn-group">
+                        <div class="btn-card"><a href="ginasio.html">Inscreva-se</a></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/campo/campo2.jpg" alt="Imagem do Card" class="card-image">
+                <div class="card-body">
+                    <span class="badge">RUGBY</span>
+                    <h5 class="card-title">AULA DE RUGBY</h5>
+                    <p class="description">7:30 às 9:00 <br> 18:00 às 19:30</p>
+                    <br>
+                    <div class="btn-group">
+                        <div class="btn-card"><a href="campo-rugby.html">Inscreva-se</a></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/equipamento/equipamento_volei.webp" alt="Imagem do Card" class="card-image">
+                <div class="card-body">
+                    <span class="badge">VÔLEI</span>
+                    <h5 class="card-title">Aula de Vôlei</h5>
+                    <p class="description">11:00 às 13:00 <br> 19:00 às 21:00</p>
+                    <br>
+                    <div class="btn-group">
+                        <div class="btn-card"><a href="quadra-volei.html">Inscreva-se</a></div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </footer>
-   
-    <script src="js/active.js"></script>
-    <script src="js/flutuante.js"></script>
+        <div id="equipamentos" class="cards">
+            <div class="card">
+                <img src="images/equipamento/equipamento_beach.jpg" alt="Imagem do Card" class="card-image">
+                <div class="card-body">
+                    <h5 class="card-title">Raquete de Beach Tennis</h5>
+                    <p class="description">Equipamento disponível para o jogo de Beach Tennis. Precisa de uma quadra
+                        para ser utilizado.</p>
+                    <br>
+                    <p><strong>Nota:</strong> Para utilizar este equipamento, você precisa agendar uma quadra específica
+                        para o Beach Tennis.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/equipamento/equipamento_futebol.jpeg" alt="Imagem do Card" class="card-image">
+                <div class="card-body">
+
+                    <h5 class="card-title">Bola Futebol</h5>
+                    <p class="description">Bola de futebol disponível para jogos de futebol no campo ou Society.
+                        Necessita de um campo para ser utilizado.</p>
+                    <br>
+                    <p><strong>Nota:</strong> Para utilizar este equipamento, você precisa agendar um campo de futebol
+                        ou rugby.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/equipamento/equipamento_basquete.webp" alt="Imagem do Card" class="card-image">
+                <div class="card-body">
+
+                    <h5 class="card-title">Bola Basquete</h5>
+                    <p class="description">Bola de basquete disponível para o jogo. Precisa de um ginásio ou quadra para
+                        ser utilizada.</p>
+                    <br>
+                    <p><strong>Nota:</strong> Para utilizar este equipamento, você precisa agendar um ginásio ou quadra
+                        de basquete.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/equipamento/equipamento_volei.webp" alt="Imagem do Card" class="card-image">
+                <div class="card-body">
+
+                    <h5 class="card-title">Bola Vôlei</h5>
+                    <p class="description">bolas de vôlei está disponível para jogar. Necessita de uma quadra de vôlei.
+                    </p>
+                    <br>
+                    <p><strong>Nota:</strong> Para utilizar este equipamento, você precisa agendar uma quadra de vôlei.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/equipamento/equipamento_rugby.png" alt="Imagem do Card" class="card-image">
+                <div class="card-body">
+                    <h5 class="card-title">Bola Rugby</h5>
+                    <p class="description">Bola de rugby disponível para jogos de rugby. Necessita de um campo de rugby.
+                    </p>
+                    <br>
+                    <p><strong>Nota:</strong> Para utilizar este equipamento, você precisa agendar um campo de rugby.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-section">
+                    <h4>Sobre Nós</h4>
+                    <p>Oferecemos os melhores espaços esportivos para você treinar e se divertir. Agende sua quadra e
+                        aproveite!</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <p><i class="fas fa-phone"></i> (11) 99999-9999</p>
+                    <p><i class="fas fa-envelope"></i> contato@seusite.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> São Paulo, SP - Brasil</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Redes Sociais</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Seu Site | Todos os direitos reservados.</p>
+            </div>
+        </footer>
+
+        <script src="js/active.js"></script>
+        <script src="js/flutuante.js"></script>
 </body>
 
 </html>

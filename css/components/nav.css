@@ -1,10 +1,3 @@
-:root {
-    --cor-fundo: #F9F9FE;
-    --cor-primaria: #000C52;
-    --cor-secundaria: #053894;
-    --cor-branca: #f0f0f0;
-    --cor-preta: #010101;
-}
 
 * {
     margin: 0;
@@ -15,11 +8,12 @@
     
     scrollbar-width: none;
 }
-
 body {
-    background: linear-gradient(#fff, #fff, #0101fc38, white, #0101fc38);
+    background: linear-gradient(#fff, #0101fc1c, white, #0101fc1c);
 }
-
+i{
+    font-size: 20px;
+}
 nav  {
     display: flex;
     justify-content: space-between;
@@ -27,9 +21,9 @@ nav  {
     padding: 25px 0;
     height: 20px;
     width: 100%;
-
+    border-bottom: 1px solid #0101fc11;
 }
-
+                
 nav .menu-pc li {
     text-decoration: none;
     font-size: 15px;
@@ -54,19 +48,21 @@ nav img {
     color: var(--cor-secundaria);
 
 }
-.fazerlogin{
-    margin-right: 10px;
+.login i{
+    font-size: 20px;
+    padding: 5px 0px 0px 10px; 
 }
-.fazerlogin button{
+.login {
+    margin-right: 10px;
     background-color: var(--cor-primaria);
     color: var(--cor-branca);
-    padding: 5px 50px;
+    padding: 8px 15px;
     border-radius: 50px;
-    font-size: 13px;
+    font-size: 15px;
     border: none;
     cursor: pointer;
 }
-.fazerlogin button:hover{
+.login:hover{
     background: linear-gradient(90deg, #1d0686, #052174);
 }
 
@@ -74,7 +70,7 @@ nav img {
     display: none;
 }
 @media(max-width:500px){
-    .menu-pc,.fazerlogin{
+    .menu-pc,.login{
         display: none;
     }
     .menu-toggle-btn{

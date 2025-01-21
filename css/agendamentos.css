@@ -1,0 +1,10 @@
+
+@import url('global.css');
+
+/* Componentes */
+@import url('components/flutuante.css');
+@import url('components/nav.css');
+
+
+/* Páginas */
+@import url('pages/agendamento.css');
