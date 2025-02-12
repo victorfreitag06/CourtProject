@@ -59,6 +59,7 @@ h1 {
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    padding: 10px;
 }
 
 .reserva-item {
@@ -70,7 +71,7 @@ h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 30px;
 }
 
 .reserva-item img {
@@ -160,4 +161,17 @@ footer {
 
 .banneragenda img {
     width: 100%;
+}
+@media(max-width:500px){
+    .reserva-item {
+        padding: 20px;
+    }
+    .btn {
+        padding: 25px 5px;
+        font-size: 12px;
+    }
+    .reserva-item h3 {
+        color: #000;
+        font-size: 15px;
+}
 }

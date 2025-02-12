@@ -16,7 +16,6 @@ body {
     align-items: start;
     width: 90%; /* Define a largura da div container como 90% da página */
     margin: 0 auto; /* Centraliza a div container horizontalmente */
-    height: 100vh;
     padding: 20px;
     margin-top: 70px;
 }
